@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch bulb</title>
+    <link rel="stylesheet" type="text/css" href="lightBulb.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+    <img id="bulb" src="images/bulboff.jpg" alt="bulboff" class="center">
+    <div class="text-center">
+        <button id="togglebtn" type="button" class="btn btn-dark">Turn on</button>
+    </div>
+
+    <script>
+        let btn = document.getElementById('togglebtn')
+        let bulb = document.getElementById('bulb')
+
+        btn.addEventListener('click', toggleBulb)
+
+        function toggleBulb(e) {
+            bulb.src = "images/bulbon.png"
+        }
+    </script>
+</body>
+</html>
